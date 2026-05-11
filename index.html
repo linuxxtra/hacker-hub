@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinuxXtra AI Hub</title>
+    <style>
+        /* Hacker Background & Matrix Effect */
+        body {
+            background-color: #000a00; 
+            background-image: radial-gradient(circle, #001a00 0%, #000000 100%);
+            color: #00FF00; 
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Glowing Corners */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border: 4px solid #00FF00;
+            box-shadow: inset 0 0 30px #00FF00, 0 0 20px #00FF00;
+            pointer-events: none;
+            animation: pulse-glow 2s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            from { opacity: 0.4; box-shadow: inset 0 0 20px #00FF00; }
+            to { opacity: 1; box-shadow: inset 0 0 50px #00FF00; }
+        }
+
+        h1 { 
+            text-shadow: 0 0 15px #00FF00; 
+            letter-spacing: 5px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 10;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        /* Black Buttons with White Font & Green Borders */
+        .hacker-btn {
+            background-color: #000000;
+            color: #FFFFFF;
+            border: 2px solid #00FF00;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 10px #00FF00;
+            text-transform: uppercase;
+        }
+
+        .hacker-btn:hover {
+            background-color: #00FF00;
+            color: #000000;
+            box-shadow: 0 0 30px #00FF00;
+            transform: scale(1.05);
+        }
+
+        /* Footer Info */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>LINUXXTRA AI HUB</h1>
+
+    <div class="btn-container">
+        <button class="hacker-btn" onclick="alert('Accessing LinuxXtra AI...')">1. LINUXXTRA AI</button>
+        <button class="hacker-btn" onclick="alert('Opening MP3 Converter...')">2. MP3 CONVERTER</button>
+        <button class="hacker-btn" onclick="alert('Initializing Calculator...')">3. CALCULATOR</button>
+    </div>
+
+    <div class="footer">[SYSTEM STATUS: ONLINE]</div>
+
+</body>
+</html>
+
